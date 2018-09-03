@@ -1,0 +1,24 @@
+nav.navbar.navbar-expand-lg.navbar-light
+  a.navbar-brand(href='https://www.blinky-lite.io/', target='_blank',data-toggle="tooltip",data-placement="bottom",title="Home")
+    img(src="/img/BlinkyLogo-Text.png" ,height="50px")
+  //button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  //#navbarNavDropdown.collapse.navbar-collapse
+  #navbarNavDropdown.navbar-expand
+    ul.navbar-nav
+      li.nav-item.active
+        a.linkicon.fas.fa-home.fa-2x(href='/',data-toggle="tooltip",data-placement="bottom",title="Home")
+          span.sr-only (current)
+      li.nav-item
+        a.linkicon.fas.fa-glasses.fa-2x(href='https://www.blinky-lite.io/', target='_blank',data-toggle="tooltip",data-placement="bottom",title="Read More")
+      li.nav-item.dropdown
+        a#navbarDropdownMenuLink.linkicon.dropdown-toggle.fas.fa-book.fa-2x(href='#' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false', target='_blank',data-placement="bottom",title="Extra")
+        .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+          a.dropdown-item(href='https://www.blinky-lite.io/', target='_blank') Blinky-Lite
+          a.dropdown-item(href='https://www.google.com/', target='_blank') Google
+      li.nav-item
+        a.linkicon.fab.fa-github.fa-2x(href='https://github.com/Blinky-Lite', target='_blank',data-toggle="tooltip",data-placement="bottom",title="Github")
+      li.nav-item
+        a.linkicon.fab.fa-twitter.fa-2x(href='https://twitter.com/BlinkyLite', target='_blank',data-toggle="tooltip",data-placement="bottom",title="Twitter")
+      li.nav-item
+        a.linkicon.fas.fa-envelope.fa-2x(href='mailto:info@blinky-lite.io',data-toggle="tooltip",data-placement="bottom",title="Contact")

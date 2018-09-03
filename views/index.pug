@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  .jumbotron
+    h1.display-5.jumbotron-title Blank Web Site
+    h2.display-5.jumbotron-title It's very empty!
+    p.lead.
+      Put something here
+    a.btn.jumbotron-button(href='https://www.thequantumguys.io/', target='_blank') Read More
+  div.container.marketing
+    div.row.featurette
+      div.col-md-8
+        h2.featurette-heading A Feature
+        p.lead Profits are up!
+        p#chart1
+      div.col-md-4
+        img.featurette-image.img-fluid.mx-auto(src="img/BlinkyLogo.png")
+    hr.featurette-divider
+  .container
+    .row
+      .col-md.bot-pad
+        .card.card1
+          img(src='img/BlinkyLogo.png', height='180px')
+          p.card-title A Card
+          .card-body
+            p.card-text
+              | Card text!
+            p#chart2
+            button.btn.card-button(type='button', onclick="dualAxisPlot()") Plot
+  
